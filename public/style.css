@@ -71,7 +71,7 @@ body.loading .modal {
 #wrapper {
     font-size: 1.0em;
     float:left;
-    border: 1px solid black;
+    border: 1px solid transparent;
     width: 90%;
 }
 #wrapper > div {
