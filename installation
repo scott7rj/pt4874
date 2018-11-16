@@ -1,0 +1,13 @@
+1. Certifique-se que o servidor tem acesso à apex.oracle:
+    teste a URL:
+        https://apex.oracle.com/pls/apex/www/ws/candidatos
+        deverá retornar dados no formato json
+2. Clonar o projeto github
+    https://github.com/scott7rj/pt4874.git
+3. Abrir cmd ou terminal, ir para a pasta /pt4874
+4. Dar o comando
+    node server.js
+    "express server running at 3000"
+5. Abrir browser (firefox ou chrome), acessar a URL 
+    http://[servidor]:3000
+
