@@ -1,6 +1,7 @@
 function formResponsavel() {
     var content;
-    content = '<input type="text" id="txtNomeCargo" size="30" maxlength="100" placeholder="nome" />';
+    content = '<h3>Cadastro de Cargo</h3>';
+    content += '<input type="text" id="txtNomeCargo" size="30" maxlength="100" placeholder="nome" />';
     content += '<input type="text" id="txtIdadeCargo" size="10" maxlength="3" placeholder="idade mín." />';
     content += comboUf();
     content += comboNacionalidade('r');

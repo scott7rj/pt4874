@@ -1,5 +1,5 @@
 1. Certifique-se que o servidor tem acesso à apex.oracle:
-    teste a URL:
+    testar a URL:
         https://apex.oracle.com/pls/apex/www/ws/candidatos
         deverá retornar dados no formato json
 2. Clonar o projeto github
@@ -10,4 +10,6 @@
     "express server running at 3000"
 5. Abrir browser (firefox ou chrome), acessar a URL 
     http://[servidor]:3000
-
+6. Para o acesso do Responsável:
+     login: admin 
+     senha: admin
