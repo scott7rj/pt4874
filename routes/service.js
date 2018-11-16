@@ -2,6 +2,12 @@
 
 var request = require('request');
 
+var buildMenu = function buildMenu(cb){
+    request('https://apex.oracle.com/pls/apex/www/ws/menu',function(error,response,body){
+        cb(error,response,body);
+    });
+}
+
 var login = function login(cb){
     request('https://apex.oracle.com/pls/apex/www/ws/login',function(error,response,body){
         cb(error,response,body);
@@ -61,7 +67,8 @@ var serviceObject = {
     "getUsers":getUsers,
     "getCargos":getCargos,
     "getCargo":getCargo,
-    "getCandidatos":getCandidatos
+    "getCandidatos":getCandidatos,
+    "buildMenu":buildMenu
 }
 
 

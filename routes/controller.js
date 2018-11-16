@@ -4,6 +4,15 @@ var service = require('./service');
 
 module.exports = function(app,express){
 
+    app.get('/menu', function(req,res){
+        var service = require('./service');
+        var result = service.buildMenu(function(err,response,data){
+            if (!err){
+                res.send(data);
+            }
+        });
+    });
+
     app.get('/login/:login/:pwd', function(req,res){
         var result = service.login(function(err,response,data){
             if (!err){
